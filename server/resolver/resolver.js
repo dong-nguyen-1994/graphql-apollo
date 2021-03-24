@@ -17,10 +17,7 @@ const resolver = {
 
     // MUTATION
     Mutation: {
-        createAuthor : async (parent, args, {mongooseData}) => {
-            console.log(1234432);
-            return await mongooseData.createAuthor(args)
-        },
+        createAuthor : async (parent, args, {mongooseData}) => await mongooseData.createAuthor(args),
         createBook: async (parent, args, {mongooseData}) => await mongooseData.createBook(args)
     }
 }

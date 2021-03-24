@@ -20,9 +20,9 @@ const BookDetails = ({bookId}) => {
                 {
                     book === null ? <Card.Text>Please select the book.</Card.Text> :
                     <Fragment>
-                        <Card.Title>{book.name}</Card.Title>
-                        <Card.Subtitle>{book.genre}</Card.Subtitle>
-                        <p>{book.author.name}</p>
+                        <Card.Title>Name: {book.name}</Card.Title>
+                        <Card.Subtitle>Genre: {book.genre}</Card.Subtitle>
+                        <p>Author: {book.author.name}</p>
                         <p>Age: {book.author.age}</p>
                         <p>All books by this author</p>
                         <ul>

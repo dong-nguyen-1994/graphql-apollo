@@ -9,5 +9,13 @@ const createBookRecord = gql`
         }
     }
 `
+const createAuthorRecord = gql`
+    mutation createAuthorMutation($name: String, $age: Int) {
+        createAuthor (name: $name, age: $age) {
+            name
+            age
+        }
+    }
+`
 
-export { createBookRecord }
+export { createBookRecord, createAuthorRecord }

@@ -27,7 +27,7 @@ const BookForm = () => {
         event.preventDefault();
         addBook({
             variables: { name, genre, authorId },
-            refetchQueries: { query: getBooks }
+            refetchQueries: [{ query: getBooks }]
         });
         setNewBook({name: '', genre: '', authorId: ''});
     }
