@@ -8,10 +8,10 @@ const Forms = () => {
     return (
 		<Row>
 			<Col>
-				<BookForm></BookForm>
+				<BookForm/>
 			</Col>
 			<Col>
-                <AuthorForm></AuthorForm>
+                <AuthorForm/>
 			</Col>
 		</Row>
 	)
