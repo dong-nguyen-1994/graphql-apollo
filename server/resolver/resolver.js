@@ -18,7 +18,7 @@ const resolver = {
     // MUTATION
     Mutation: {
         createAuthor : async (parent, args, {mongooseData}) => await mongooseData.createAuthor(args),
-        createBook: async (parent, args) => await mongooseData.createBook(args)
+        createBook: async (parent, args, {mongooseData}) => await mongooseData.createBook(args)
     }
 }
 
