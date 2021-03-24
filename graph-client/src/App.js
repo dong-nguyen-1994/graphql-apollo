@@ -1,11 +1,12 @@
 import Container from 'react-bootstrap/Container'
 import BookList from './components/BookList'
 import Forms from './components/Forms'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client'
 
 const client = new ApolloClient({
-	uri: 'https://limitless-earth-31519.herokuapp.com/graphql',
+	uri: 'http://localhost:4000/graphql',
 	cache: new InMemoryCache()
 })
 
@@ -23,4 +24,4 @@ function App() {
 	)
 }
 
-export default App
+export default App;

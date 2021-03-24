@@ -1,17 +1,20 @@
-import React, { useState } from 'react'
-import {Row, Col, Card, CardColumns} from 'react-bootstrap';
+import React from 'react'
+import {Row, Col, Form, Button} from 'react-bootstrap';
+
+import BookForm from './BookForm'
+import AuthorForm from './AuthorForm'
 
 const Forms = () => {
     return (
 		<Row>
-			<Col xs={8}>
-				<Form></Form>
+			<Col>
+				<BookForm></BookForm>
 			</Col>
 			<Col>
-				<BookDetails bookId={bookSelected} />
+                <AuthorForm></AuthorForm>
 			</Col>
 		</Row>
 	)
 }
 
-export default Forms
+export default Forms;
