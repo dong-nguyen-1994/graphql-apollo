@@ -38,10 +38,10 @@ const AuthorForm = () => {
                 <Form.Control />
             </Form.Group>
             <Form.Group>
-                <Form.Control type="text" placeholder="Author name" name="name" onChange={onInputChange} value={newAuthor.name}></Form.Control>
+                <Form.Control required type="text" placeholder="Author name" name="name" onChange={onInputChange} value={newAuthor.name}></Form.Control>
             </Form.Group>
             <Form.Group>
-                <Form.Control type="number" placeholder="Author age" name="age" onChange={onInputChange} value={newAuthor.age}></Form.Control>
+                <Form.Control required type="number" placeholder="Author age" name="age" onChange={onInputChange} value={newAuthor.age}></Form.Control>
             </Form.Group>
             <Button className="float-right" variant="info" type="submit">Add Author</Button>
         </Form>
